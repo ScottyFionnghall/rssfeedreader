@@ -20,4 +20,7 @@ def get_stuff(def_user_input):
 user_input = str(input("Paste RSS link (if multiple links seperate by commas):"))
 user_input = user_input.split(',')
 for i in range(len(user_input)):
-    get_stuff(user_input[i])
+    try:
+        get_stuff(user_input[i])
+    except ValueError:
+        print('Invalid link')
