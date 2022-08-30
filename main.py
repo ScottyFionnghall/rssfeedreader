@@ -7,7 +7,7 @@
 # Example links:
 # https://rss.art19.com/apology-line, https://feeds.simplecast.com/54nAGcIl, https://feeds.fireside.fm/bibleinayear/rss
 
-from multiprocessing.sharedctypes import Value
+
 import rssparser # import custom made parser
 # ask user for one or multiple link to rss
 user_input = str(input("Paste RSS link (if multiple links separated by commas):"))
